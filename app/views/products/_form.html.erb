@@ -1,0 +1,6 @@
+<%= simple_form_for(@product) do |f| %>
+  <%= f.input :name %>
+  <%= f.association :category %>
+  <%# f.association :category, :collection => Category.all %>
+  <%= f.button :submit %>
+<% end %>
